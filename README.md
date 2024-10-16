@@ -21,7 +21,7 @@ ATS-Buddy is a web-based tool designed to help job seekers create **ATS-friendly
 - **AI Integration**: Anthropic's Claude API
   - Generates the actual resume bullet points based on user input.
 
-- **Cloud Deployment**: (Optional: Specify deployment details here if applicable, e.g., Heroku, AWS, etc.)
+- **Cloud Deployment**: Future Integration
   
 ## Project Structure
 
