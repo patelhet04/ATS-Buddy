@@ -1,4 +1,6 @@
 import Fastify, { FastifyInstance } from "fastify";
+import authRoutes from "./routes/auth";
+import promptRoutes from "./routes/prompt";
 const isDevelopment = process.env.NODE_ENV === "development";
 
 const server: FastifyInstance = Fastify({
@@ -15,9 +17,8 @@ const server: FastifyInstance = Fastify({
   },
 });
 
-server.get("/", async function () {
-  return { message: "Hello World" };
-});
+// server.register(authRoutes, { prefix: "auth" });
+server.register(promptRoutes, { prefix: "prompt" });
 
 async function main() {
   await server.listen({
